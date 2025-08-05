@@ -1,31 +1,39 @@
-# fraud-detection-autoencoder-xgboost
 # 🕵️‍♂️ Fraud Detection System: Autoencoder + XGBoost
 
-This project detects fraudulent activity in customer billing data using a hybrid unsupervised + supervised ML pipeline.
+This project detects fraudulent activity in customer billing data using a hybrid **unsupervised + supervised machine learning pipeline**, paired with an interactive frontend dashboard.
+
+---
 
 ## 🔧 Tech Stack
-- Autoencoder (Keras) for anomaly detection
-- XGBoost for classification
-- FastAPI for backend APIs
-- React + Chart.js for dashboard visualization
-- MySQL for structured data storage
-- Google Colab for training
 
-## 🧠 Techniques
-- Feature engineering, outlier detection
-- Anomaly scoring via Autoencoders
-- Classification via XGBoost
-- Real-time fraud dashboard interface
+- **Autoencoder (Keras)** – for anomaly detection
+- **XGBoost** – for binary fraud classification
+- **FastAPI** – backend API for fraud investigation & dashboard data
+- **React + Chart.js** – dynamic frontend dashboard with fraud insights
+- **MySQL** – structured data storage (customer, billing, transaction)
+- **Google Colab** – model training and experimentation environment
 
-## 📸 Project Assets
-- 📽️ [Project Demo Video](https://drive.google.com/drive/folders/17jdNjRD4BqEQRXw37AlmMxQeIKJeOE1E)
-- 🧾 [Colab Notebook](https://colab.research.google.com/drive/YOUR_NOTEBOOK_ID)
-- 📷 Screenshots (see `/assets` folder)
+---
 
-## ⚠️ Status
-> Original code lost due to hardware damage, but core components (Colab, UI, visual assets) preserved.
+## 🧠 Key Techniques
 
-## 📈 Future Improvements
-- Restore backend (FastAPI + DB)
-- Add SHAP/LIME for explainability
-- Live deployment on Render/AWS
+- Feature engineering & cleaning of customer billing datasets
+- Dimensionality reduction via Autoencoders
+- Fraud scoring based on anomaly reconstruction error
+- Classification using XGBoost with threshold tuning
+- Real-time fraud detection dashboard with region-wise insights
+
+---
+
+## 📊 React Frontend Overview
+
+The frontend is built using **React** with the following features:
+
+- 🔍 **Searchable interface** for customer accounts
+- 📊 **Interactive visualizations** using `Chart.js` (consumption, billing, fraud probability)
+- 📁 **Modular layout** (Dashboard, Customer Info, Fraud Panel, Settings)
+- 📱 **Responsive UI** for desktop & mobile
+- 🔌 Ready to connect with FastAPI backend for real-time updates
+
+React folder structure:
+
